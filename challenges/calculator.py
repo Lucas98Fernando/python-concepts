@@ -14,7 +14,7 @@ def operation(type):
 
 
 def setDefaultMessage(type):
-    return f'A {type} entre os números foi: '
+    return f'\nA {type} entre os números foi: '
 
 
 while option != 5:
@@ -32,24 +32,16 @@ while option != 5:
 
     if option == 1:
         result = operation("sum")
-        print("\n")
-        print(f'{setDefaultMessage("soma")} {result}')
-        print("\n")
+        print(f'{setDefaultMessage("soma")} {result} \n')
 
     if option == 2:
         result = operation("subtraction")
-        print("\n")
-        print(f'{setDefaultMessage("subtração")} {result}')
-        print("\n")
+        print(f'{setDefaultMessage("subtração")} {result} \n')
 
     if option == 3:
         result = operation("multiplication")
-        print("\n")
-        print(f'{setDefaultMessage("multiplicação")} {result}')
-        print("\n")
+        print(f'{setDefaultMessage("multiplicação")} {result} \n')
 
     if option == 4:
         result = operation("division")
-        print("\n")
-        print(f'{setDefaultMessage("divisão")} {result}')
-        print("\n")
+        print(f'{setDefaultMessage("divisão")} {result} \n')
