@@ -53,7 +53,3 @@ while option != 5:
         print("\n")
         print(f'{setDefaultMessage("divisão")} {result}')
         print("\n")
-
-    if (option == 5):
-        print("Até mais!")
-        break
