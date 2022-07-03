@@ -8,7 +8,8 @@ def operation(type):
     return {
         'sum': numberOne + numberTwo,
         'subtraction': numberOne - numberTwo,
-        'multiplication': numberOne * numberTwo
+        'multiplication': numberOne * numberTwo,
+        'division': numberOne / numberTwo
     }[type]
 
 
@@ -16,7 +17,7 @@ def setDefaultMessage(type):
     return f'A {type} entre os números foi: '
 
 
-while option != 4:
+while option != 5:
     print("------------------")
     print("Calculadora")
     print("------------------")
@@ -24,7 +25,8 @@ while option != 4:
     print("1 - Soma")
     print("2 - Subtração")
     print("3 - Multiplicação")
-    print("4 - Sair")
+    print("4 - Divisão")
+    print("5 - Sair")
     print("\n")
     option = int(input("Informe uma opção: "))
 
@@ -46,6 +48,12 @@ while option != 4:
         print(f'{setDefaultMessage("multiplicação")} {result}')
         print("\n")
 
-    if (option == 4):
+    if option == 4:
+        result = operation("division")
+        print("\n")
+        print(f'{setDefaultMessage("divisão")} {result}')
+        print("\n")
+
+    if (option == 5):
         print("Até mais!")
         break
