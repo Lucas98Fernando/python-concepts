@@ -1,4 +1,5 @@
 option = 0
+validOptions = {1, 2, 3, 4, 5}
 
 
 def operation(type):
@@ -21,13 +22,13 @@ while option != 5:
     print("------------------")
     print("Calculadora")
     print("------------------")
-    print("\n")
+    print("")
     print("1 - Soma")
     print("2 - Subtração")
     print("3 - Multiplicação")
     print("4 - Divisão")
     print("5 - Sair")
-    print("\n")
+    print("")
     option = int(input("Informe uma opção: "))
 
     if option == 1:
@@ -45,3 +46,6 @@ while option != 5:
     if option == 4:
         result = operation("division")
         print(f'{setDefaultMessage("divisão")} {result} \n')
+
+    if not option in validOptions:
+        print("Informe uma opção válida! \n")
