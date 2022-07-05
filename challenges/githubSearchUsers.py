@@ -1,8 +1,10 @@
 import requests
 
 
+print('GitHub Users Find\n')
+
+
 def fetchUser():
-    print('GitHub Users Find\n')
     username = input('Informe o nome do usuário => ')
     url = f'https://api.github.com/users/{username}'
     response = requests.get(url)
