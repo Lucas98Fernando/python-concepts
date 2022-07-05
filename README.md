@@ -17,4 +17,5 @@ O **PEP 8** é um guia/padrão de estilo de código.
 ## :books: Referências
 
 [Documentação Oficial](https://www.python.org/)
+
 [The Zen of Python - Python Academy](https://pythonacademy.com.br/zen-of-python)
