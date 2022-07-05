@@ -1,7 +1,7 @@
 import requests
+from colorama import Fore, Style
 
-
-print('GitHub Users Find\n')
+print(f'{Fore.LIGHTBLUE_EX}GitHub Users Find{Style.RESET_ALL}\n')
 
 
 def fetchUser():
@@ -11,13 +11,14 @@ def fetchUser():
     data = response.json()
 
     if response.status_code == 200:
-        print(f'\nNome completo: {data["name"]}')
-        print(f'Bio: {data["bio"]}')
-        print(f'Empresa: {data["company"]}')
-        print(f'Localização: {data["location"]}')
-        print(f'Seguidores: {data["followers"]}')
-        print(f'Seguindo: {data["following"]}')
-        print(f'Repositórios públicos: {data["public_repos"]}')
+        print(f'\nNome completo: {Fore.YELLOW}{data["name"]}{Style.RESET_ALL}')
+        print(f'Bio: {Fore.YELLOW}{data["bio"]}{Style.RESET_ALL}')
+        print(f'Empresa: {Fore.YELLOW}{data["company"]}{Style.RESET_ALL}')
+        print(f'Localização: {Fore.YELLOW}{data["location"]}{Style.RESET_ALL}')
+        print(f'Seguidores: {Fore.YELLOW}{data["followers"]}{Style.RESET_ALL}')
+        print(f'Seguindo: {Fore.YELLOW}{data["following"]}{Style.RESET_ALL}')
+        print(
+            f'Repositórios públicos: {Fore.YELLOW}{data["public_repos"]}{Style.RESET_ALL}')
 
         searchAgain()
     else:
