@@ -1,5 +1,5 @@
 """
-List são utilizadas para armazenar múltiplos elementos em uma única variável.
+Lists são utilizadas para armazenar múltiplos elementos em uma única variável.
 """
 
 numbers = [0, 1, 2]
