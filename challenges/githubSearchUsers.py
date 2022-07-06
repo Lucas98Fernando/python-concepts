@@ -1,7 +1,8 @@
 import requests
 from colorama import Fore, Style
+from cli.colors import cliColor
 
-print(f'{Fore.LIGHTBLUE_EX}GitHub Users Find{Style.RESET_ALL}\n')
+print(f'{cliColor(color="LIGHTBLUE_EX", text="GitHub Users Find")}\n')
 
 
 def fetchUser():
@@ -11,14 +12,18 @@ def fetchUser():
     data = response.json()
 
     if response.status_code == 200:
-        print(f'\nNome completo: {Fore.YELLOW}{data["name"]}{Style.RESET_ALL}')
-        print(f'Bio: {Fore.YELLOW}{data["bio"]}{Style.RESET_ALL}')
-        print(f'Empresa: {Fore.YELLOW}{data["company"]}{Style.RESET_ALL}')
-        print(f'Localização: {Fore.YELLOW}{data["location"]}{Style.RESET_ALL}')
-        print(f'Seguidores: {Fore.YELLOW}{data["followers"]}{Style.RESET_ALL}')
-        print(f'Seguindo: {Fore.YELLOW}{data["following"]}{Style.RESET_ALL}')
         print(
-            f'Repositórios públicos: {Fore.YELLOW}{data["public_repos"]}{Style.RESET_ALL}')
+            f'\nNome completo: {cliColor(color="YELLOW", text=data["name"])}')
+        print(f'Bio: {cliColor(color="YELLOW", text=data["bio"])}')
+        print(f'Empresa: {cliColor(color="YELLOW", text=data["company"])}')
+        print(
+            f'Localização: {cliColor(color="YELLOW", text=data["location"])}')
+        print(
+            f'Seguidores: {cliColor(color="YELLOW", text=data["followers"])}')
+        print(
+            f'Seguindo: {cliColor(color="YELLOW", text=data["following"])}')
+        print(
+            f'Repositórios públicos: {cliColor(color="YELLOW", text=data["public_repos"])}')
 
         searchAgain()
     else:
@@ -29,6 +34,8 @@ def searchAgain():
     searchAgain = input('\nPesquisar novo usuário (s/n)? ')
     if searchAgain == 's':
         fetchUser()
+    else:
+        print(f'{cliColor(color="LIGHTBLUE_EX", text="Até a próxima!")}')
 
 
 fetchUser()

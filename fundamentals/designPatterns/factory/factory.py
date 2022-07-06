@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 
 
 class Logistics(ABC):
+    @abstractmethod
     def createTransport(self):
         pass
 
@@ -23,6 +24,7 @@ class ShipLogistics(Logistics):
 
 
 class Product(ABC):
+    @abstractmethod
     def operation(self) -> str:
         pass
 
@@ -37,12 +39,12 @@ class Ship(Product):
         return 'Navio entrega por água'
 
 
-def client(creator: Logistics) -> None:
+def Client(creator: Logistics) -> None:
     return creator.planDelivery()
 
 
 if __name__ == '__main__':
-    truck = client(RoadLogistics())
+    truck = Client(RoadLogistics())
     print(truck)
-    ship = client(ShipLogistics())
+    ship = Client(ShipLogistics())
     print(ship)
