@@ -1,5 +1,4 @@
 import requests
-from colorama import Fore, Style
 from cli.colors import cliColor
 
 print(f'{cliColor(color="LIGHTBLUE_EX", text="GitHub Users Find")}\n')
