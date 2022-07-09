@@ -6,7 +6,7 @@ vowelsCount = 0
 
 if word:
     for letter in word:
-        if (letter in vowels):
+        if letter in vowels:
             vowelsCount += 1
     print(f'A quantidade de vogais na palavra {word} é {vowelsCount}')
 else:

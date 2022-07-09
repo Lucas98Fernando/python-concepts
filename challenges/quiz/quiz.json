@@ -1,0 +1,41 @@
+{
+  "questions": [
+    {
+      "title": "Em qual ano o Python foi lançado?",
+      "answer": 2,
+      "alternatives": ["1988", "1989", "1990", "1991", "1992"]
+    },
+    {
+      "title": "Qual das opções abaixo é forma correta de exibir uma informação no console com Python?",
+      "answer": 4,
+      "alternatives": [
+        "System.out.print('Hello world')",
+        "console.log('Hello world')",
+        "System.Console.WriteLine('Hello world')",
+        "print('Hello world')",
+        "puts('Hello world')"
+      ]
+    },
+    {
+      "title": "O que significa a sigla PEP?",
+      "answer": 5,
+      "alternatives": [
+        "Python Engineer Proposals",
+        "Python Environment Practice",
+        "Python Enterprise Project",
+        "Python Especially Presentation",
+        "Python Enhancement Proposals"
+      ]
+    },
+    {
+      "title": "Qual PEP correponde ao guia de estilos do Python?",
+      "answer": 3,
+      "alternatives": ["PEP 6", "PEP 7", "PEP 8", "PEP 9", "PEP 10"]
+    },
+    {
+      "title": "Qual PEP corresponde ao 'Zen of Python?'",
+      "answer": 1,
+      "alternatives": ["PEP 20", "PEP 21", "PEP 22", "PEP 23", "PEP 24"]
+    }
+  ]
+}
