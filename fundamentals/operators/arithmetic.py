@@ -1,10 +1,12 @@
 numberOne = 10
-numberTwo = 2
+numberTwo = 3
 
 print(numberOne + numberTwo)
 print(numberOne - numberTwo)
 print(numberOne * numberTwo)
+print(numberOne ** numberTwo)
 print(numberOne / numberTwo)
+print(numberOne // numberTwo)
 print(numberOne % numberTwo)
 
 value = input('Informe um número: ')
